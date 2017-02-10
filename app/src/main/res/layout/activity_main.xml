@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bluerain.carok.MainActivity">
+
+    <ListView
+        android:id="@+id/lv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/txv_status"
+        android:divider="#ffffff"
+        android:dividerHeight="3dp"
+        android:headerDividersEnabled="true" />
+
+    <TextView
+        android:id="@+id/txv_status"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/car_status_selector"
+        android:enabled="false"
+        android:gravity="center"
+        android:textColor="#0e0e0e"
+        android:textSize="20dp"
+        android:visibility="gone"
+        tools:text="手动申请"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txv_main_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="数据失败"
+        android:textSize="25dp"
+        android:visibility="gone" />
+</RelativeLayout>
